@@ -61,10 +61,12 @@ void fillwagon(vector<Samsonov*>& _Wagon, int _n)
     }
 }
 
+
+vector<Samsonov*> Wagon;
+vector<Samsonov*> Lorry;
+
 int main () 
 {
-    vector<Samsonov*> Wagon;
-    vector<Samsonov*> Lorry;
     int n;
     cin >> n;
     fillwagon(Wagon, n);

@@ -4,7 +4,8 @@
 #include <vector>
 using namespace std;
 
-class Samsonov {
+class Samsonov 
+{
     public:
         float * p;
         float x;
@@ -27,7 +28,8 @@ class Samsonov {
         virtual void geti() {}
 };
 
-class Aleksandr : public Samsonov {
+class Aleksandr : public Samsonov 
+{
     public:
         int y;
         Aleksandr(int _y, float val_x) : Samsonov(val_x) 
@@ -44,7 +46,8 @@ class Aleksandr : public Samsonov {
         }
 };
 
-void fillwagon(vector<Samsonov*>& _Wagon, int _n) {
+void fillwagon(vector<Samsonov*>& _Wagon, int _n) 
+{
     srand(time(NULL));
     float a;
     int b;
@@ -58,7 +61,8 @@ void fillwagon(vector<Samsonov*>& _Wagon, int _n) {
     }
 }
 
-int main () {
+int main () 
+{
     vector<Samsonov*> Wagon;
     vector<Samsonov*> Lorry;
     int n;
